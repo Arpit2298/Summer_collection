@@ -11,6 +11,27 @@ body{
     background-color: rgba(255, 255, 255, 0.726) ;
 }
 
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.hover::after{
+    content:'';
+    display: block;
+    padding-bottom: 1px;
+    width: 0%;
+    
+    height: 1px;
+    background-color: crimson;
+    transition: width .3;
+}
+.hover:hover::after{
+    width: 100%;
+    transition: width .3s;
+    
+}
+
 .nav1{
     overflow: hidden;
     width: 100%;
@@ -383,12 +404,17 @@ ul li{
 .boxmap{
     width: 50%;
     height:700px;
-    background-color: black;
+    background-color: #232323;
     float: left;
 }
 
 .boxmap>div{
     margin:10%;
+}
+
+.boxmap i:hover{
+    color: crimson;
+    
 }
 
 .boxmap h2{
@@ -439,20 +465,20 @@ ul li{
     width: 100%;
     height: 450px;
     overflow: hidden;
-    background-color: black;
+    background-color: #232323;
 }
 
 .div1{
     width: 80%;
     height: 350px;
     margin: 5% 10%;
-    background-color: black;
+    
 }
 
 .sub_div{
     width: 50%;
     height: 350px;
-    background-color: black;
+    background-color: #232323;
     float: left;
 }
 
@@ -462,14 +488,66 @@ ul li{
     color: white;
 }
 
-ul1{
-    list-style-type: none;
-    font-size:18px ;
-
-    margin: 5% 0 0 0;
-    font-weight: 550;
+.sub_div h5{
+    font-size: 15px;
+    margin-top: 12%;
+    font-family:'Comfortaa', cursive ;
+    color: white;
 }
-ul1 li a {
+
+.sub_div h6{
+    font-size: 15px;
+    margin-top: 18%;
+    font-family:'Comfortaa', cursive ;
+    color: white;
+    margin-block-end: 0;
+   
+}
+.sub_div h6 a{
+    color: crimson;
+}
+
+.sub_div h2{
+    font-size: 15px;
+    
+    font-family:'Comfortaa', cursive ;
+    color: white;
+   
+}
+
+.sub_div i{
+    color: white;
+    margin-right: 5%;
+    
+    
+}
+.sub_div i:hover{
+   color: crimson;
+}
+.ul1{
+    list-style-type: none;
+    font-size:18px ;   
+    font-weight: 550;
+    margin-top:2% ;
+    float: left;
+}
+
+.ul1 h4:hover a{
+    color: gray;
+}
+
+.ul2{
+    list-style-type: none;
+    font-size:18px ;   
+    font-weight: 550;
+    margin:7% 0 0 35%;
+}
+
+.ul2 h4:hover a{
+    color: gray;
+}
+
+.ul1 h4 a {
    
     font-size: 18px;
     
@@ -480,4 +558,84 @@ ul1 li a {
    
 }
 
+.ul2 h4 a {
+   
+    font-size: 18px;
+    
+    color: white;
+    font-weight: 20;
+    text-decoration: none;
+    font-family:'Comfortaa', cursive ;
+   
+}
 
+#input_text{
+    background-color: white;
+    width: 310px;
+    height: 47px;
+    float: left;
+    border: none;
+    border-radius: 25px 25px;
+    position: absolute;
+
+}
+
+
+
+#btn_foot{
+    width: 135px;
+    height: 50px;
+    border: none;
+    margin-left: 25%;
+    border-radius: 25px 25px;
+    background-color: #fe525b;
+    color: white;
+    font-family:'Comfortaa', cursive ;
+    position: absolute;    
+
+}
+
+#btn_foot::before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width:0;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 0, 0, 0.548);
+    transition: 0.5s;
+}
+
+#btn_foot:hover::before{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    border-radius: 25px 25px;
+    
+
+}
+
+.sub_div a{
+    text-decoration: none;
+    color: white;
+}
+
+.sub_div a:hover{
+    color: gray;
+}
+
+.card_box_foot{
+    width: 50px;
+    height: 10px;
+    
+    float: left;
+    margin:1% 1% 0 2%;
+    border-radius: 5px;
+    
+}
+
+.img_card1{
+    max-width: 60px;
+    max-height: 30px;
+}
